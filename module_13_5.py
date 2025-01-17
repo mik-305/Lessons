@@ -60,6 +60,9 @@ async def send_calories(message: Message, state: FSMContext):
     except ValueError:
         await message.answer("Подходят только числовые значения.")
     await state.finish()            # Финишируем машину состояний
+@dp.message_handler()
+async def all_message(message):  # Реакция на любые сообщения(без ключевых слов)
+    await message.answer('Введите команду /start, чтобы начать общение.')
 
 if __name__ == "__main__":
     executor.start_polling(dp, skip_updates=True)
