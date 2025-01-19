@@ -8,7 +8,7 @@ from aiogram.utils import executor
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-api = '7646886894:AAED7i2kF5WPyenxWwSgk2nuDb3TcLTNI0I'
+api = 'NNN'
 bot = Bot(token = api)
 dp = Dispatcher(bot, storage = MemoryStorage())
 
